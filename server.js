@@ -92,10 +92,10 @@ router.get('/', function(req, res) {
 router.route('/element/:id/:command')
     .post(function(req, res) {
       switch(req.params.id) {
-        case 'left':
+        case 'bottom':
           var connectorAddress = '4:2';
           break;
-        case 'right':
+        case 'top':
           var connectorAddress = '4:1';
           break;
       }
@@ -123,10 +123,10 @@ router.route('/element/:id/:command')
     router.route('/xboxone/:id/:command')
         .post(function(req, res) {
           switch(req.params.id) {
-            case 'left':
+            case 'bottom':
               var connectorAddress = '4:2';
               break;
-            case 'right':
+            case 'top':
               var connectorAddress = '4:1';
               break;
           }
