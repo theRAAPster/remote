@@ -1,0 +1,9 @@
+Build docker containers:
+
+docker build -t remote-api:v1 .
+docker build -t remote-frontend:v1 .
+
+Run docker containers:
+
+docker run -d -p 8080:8080 remote-api:v1
+docker run -d -p 80:80 remote-frontend:v1

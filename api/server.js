@@ -80,6 +80,7 @@ var router = express.Router();              // get an instance of the express Ro
 router.use(function(req, res, next) {
     // do logging
     //console.log('Something is happening.');
+    res.contentType('application/text');
     next(); // make sure we go to the next routes and don't stop here
 });
 
