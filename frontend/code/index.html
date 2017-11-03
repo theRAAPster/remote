@@ -34,50 +34,107 @@
 
         <h3>Xbox</h3>
         <h4>Top</h4>
-        <form action="http://localhost:8080/api/xboxone/top/cursorup" method="POST">
-            <input type="submit" value="Up">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/top/cursordown" method="POST">
-            <input type="submit" value="Down">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/top/cursorleft" method="POST">
-            <input type="submit" value="Left">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/top/cursorright" method="POST">
-            <input type="submit" value="Right">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/top/cursorenter" method="POST">
-            <input type="submit" value="Enter">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/top/back" method="POST">
-            <input type="submit" value="Back">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/top/exit" method="POST">
-            <input type="submit" value="Exit">
-        </form>
+        <table>
+                <tr>
+                    <td></td>
+                    <td>
+                        <form action="http://localhost:8080/api/xboxone/top/cursorup" id="topXboxCursorUp">
+                            <input type="submit" value="Up">
+                        </form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="http://localhost:8080/api/xboxone/top/cursorleft" id="topXboxCursorLeft">
+                            <input type="submit" value="Left">
+                        </form>
+                    </td>
+                    <td>
+                        <form action="http://localhost:8080/api/xboxone/top/cursorenter" id="topXboxCursorEnter">
+                            <input type="submit" value="Enter">
+                        </form>
+                    </td>
+                    <td>
+                        <form action="http://localhost:8080/api/xboxone/top/cursorright" id="topXboxCursorRight">
+                            <input type="submit" value="Right">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <form action="http://localhost:8080/api/xboxone/top/cursordown" id="topXboxCursorDown">
+                            <input type="submit" value="Down">
+                        </form>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="http://localhost:8080/api/xboxone/top/back" id="topXboxBack">
+                            <input type="submit" value="Back">
+                        </form>
+                    </td>
+                    <td></td>
+                    <td>
+                        <form action="http://localhost:8080/api/xboxone/top/exit" id="topXboxExit">
+                            <input type="submit" value="Exit">
+                        </form>
+                    </td>
+                </tr>
+            </table>
 
         <h4>Bottom</h4>
-        <form action="http://localhost:8080/api/xboxone/bottom/cursorup" id="bottomXboxCursorUp">
-            <input type="submit" value="Up">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/bottom/cursordown" id="bottomXboxCursorDown">
-            <input type="submit" value="Down">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/bottom/cursorleft" id="bottomXboxCursorLeft">
-            <input type="submit" value="Left">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/bottom/cursorright" id="bottomXboxCursorRight">
-            <input type="submit" value="Right">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/bottom/cursorenter" id="bottomXboxCursorEnter">
-            <input type="submit" value="Enter">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/bottom/back" id="bottomXboxBack">
-            <input type="submit" value="Back">
-        </form>
-        <form action="http://localhost:8080/api/xboxone/bottom/exit" id="bottomXboxExit">
-            <input type="submit" value="Exit">
-        </form>
-
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <form action="http://localhost:8080/api/xboxone/bottom/cursorup" id="bottomXboxCursorUp">
+                        <input type="submit" value="Up">
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://localhost:8080/api/xboxone/bottom/cursorleft" id="bottomXboxCursorLeft">
+                        <input type="submit" value="Left">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://localhost:8080/api/xboxone/bottom/cursorenter" id="bottomXboxCursorEnter">
+                        <input type="submit" value="Enter">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://localhost:8080/api/xboxone/bottom/cursorright" id="bottomXboxCursorRight">
+                        <input type="submit" value="Right">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <form action="http://localhost:8080/api/xboxone/bottom/cursordown" id="bottomXboxCursorDown">
+                        <input type="submit" value="Down">
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://localhost:8080/api/xboxone/bottom/back" id="bottomXboxBack">
+                        <input type="submit" value="Back">
+                    </form>
+                </td>
+                <td></td>
+                <td>
+                    <form action="http://localhost:8080/api/xboxone/bottom/exit" id="bottomXboxExit">
+                        <input type="submit" value="Exit">
+                    </form>
+                </td>
+            </tr>
+        </table>
     </body>
 </html>
