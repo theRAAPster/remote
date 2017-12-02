@@ -4,16 +4,16 @@ FROM node:boron
 WORKDIR /usr/src/app
 
 # Install app dependencies
-#COPY package.json .
+COPY package.json .
 RUN npm install
 
-#RUN npm install -g nodemon
+RUN npm install -g nodemon
 
 # Bundle app source
-#COPY . /usr/src/app
+COPY . /usr/src/app
 
 EXPOSE 8080
 
-#USER node
+USER node
 
 CMD [ "nodemon", "start" ]
