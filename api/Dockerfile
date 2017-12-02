@@ -16,4 +16,4 @@ EXPOSE 8080
 
 USER node
 
-CMD [ "nodemon", "start" ]
+CMD [ "nodemon", "server.js" ]
