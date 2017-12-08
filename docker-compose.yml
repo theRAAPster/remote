@@ -1,0 +1,26 @@
+version: '3'
+services:
+  frontend:
+    image: theraapster/remote-frontend:latest
+    ports:
+    - "80:80"
+    volumes:
+    - C:/code/remote/frontend/nginx/:/etc/nginx/conf.d
+    - C:/code/remote/frontend/code/:/usr/share/nginx/html
+    container_name: remote-frontend
+    depends_on:
+    - api
+    networks:
+    - remote_nw
+    restart: always
+  api:
+    image: theraapster/remote-api:latest
+    volumes:
+    - C:/code/remote/api/:/usr/src/app
+    container_name: remote-api
+    networks:
+    - remote_nw
+    restart: always
+networks:
+  remote_nw:
+    driver: bridge
