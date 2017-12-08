@@ -5,8 +5,8 @@ services:
     ports:
     - "80:80"
     volumes:
-    - C:/code/remote/frontend/nginx/:/etc/nginx/conf.d
-    - C:/code/remote/frontend/code/:/usr/share/nginx/html
+    - ./frontend/nginx/:/etc/nginx/conf.d
+    - ./frontend/code/:/usr/share/nginx/html
     container_name: remote-frontend
     depends_on:
     - api
@@ -16,7 +16,7 @@ services:
   api:
     image: theraapster/remote-api:latest
     volumes:
-    - C:/code/remote/api/:/usr/src/app
+    - ./api/:/usr/src/app
     container_name: remote-api
     networks:
     - remote_nw
