@@ -13,6 +13,9 @@ services:
     networks:
     - remote_nw
     restart: always
+    environment:
+      NGINX_HOST: jlr8-laptop.local.raaps.net
+    command: sh -c "envsubst '\$$NGINX_HOST' < /usr/share/nginx/html/index.html.template > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"
   api:
     image: theraapster/remote-api:latest
     volumes:
