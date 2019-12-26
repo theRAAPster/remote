@@ -1,4 +1,4 @@
-FROM node:boron
+FROM node:stretch
 
 # Create app directory
 WORKDIR /usr/src/app
