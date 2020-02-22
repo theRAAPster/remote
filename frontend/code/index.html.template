@@ -7,6 +7,7 @@
         <script src="scripts.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
         <h1>My Remote</h1>
 
@@ -36,55 +37,115 @@
         <h3>Xbox</h3>
         <h4>Top</h4>
         <table>
-                <tr>
-                    <td></td>
-                    <td>
-                        <form action="http://${NGINX_HOST}/api/xboxone/top/cursorup" id="topXboxCursorUp">
-                            <input type="submit" value="Up" class="xboxButton">
-                        </form>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <form action="http://${NGINX_HOST}/api/xboxone/top/cursorleft" id="topXboxCursorLeft">
-                            <input type="submit" value="Left" class="xboxButton">
-                        </form>
-                    </td>
-                    <td>
-                        <form action="http://${NGINX_HOST}/api/xboxone/top/cursorenter" id="topXboxCursorEnter">
-                            <input type="submit" value="Enter" class="xboxButton">
-                        </form>
-                    </td>
-                    <td>
-                        <form action="http://${NGINX_HOST}/api/xboxone/top/cursorright" id="topXboxCursorRight">
-                            <input type="submit" value="Right" class="xboxButton">
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <form action="http://${NGINX_HOST}/api/xboxone/top/cursordown" id="topXboxCursorDown">
-                            <input type="submit" value="Down" class="xboxButton">
-                        </form>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <form action="http://${NGINX_HOST}/api/xboxone/top/back" id="topXboxBack">
-                            <input type="submit" value="Back" class="xboxButton">
-                        </form>
-                    </td>
-                    <td></td>
-                    <td>
-                        <form action="http://${NGINX_HOST}/api/xboxone/top/exit" id="topXboxExit">
-                            <input type="submit" value="Exit" class="xboxButton">
-                        </form>
-                    </td>
-                </tr>
-            </table>
+            <tr>
+                <td></td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/cursorup" id="topXboxCursorUp">
+                        <input type="submit" value="Up" class="xboxButton">
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/cursorleft" id="topXboxCursorLeft">
+                        <input type="submit" value="Left" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/cursorenter" id="topXboxCursorEnter">
+                        <input type="submit" value="Enter" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/cursorright" id="topXboxCursorRight">
+                        <input type="submit" value="Right" class="xboxButton">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/cursordown" id="topXboxCursorDown">
+                        <input type="submit" value="Down" class="xboxButton">
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/back" id="topXboxBack">
+                        <input type="submit" value="Back" class="xboxButton">
+                    </form>
+                </td>
+                <td></td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/exit" id="topXboxExit">
+                        <input type="submit" value="Exit" class="xboxButton">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/digit1" id="topXbox1">
+                        <input type="submit" value="1" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/digit2" id="topXbox2">
+                        <input type="submit" value="2" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/digit3" id="topXbox3">
+                        <input type="submit" value="3" class="xboxButton">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/digit4" id="topXbox4">
+                        <input type="submit" value="4" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/digit5" id="topXbox5">
+                        <input type="submit" value="5" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/digit6" id="topXbox6">
+                        <input type="submit" value="6" class="xboxButton">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/digit7" id="topXbox7">
+                        <input type="submit" value="7" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/digit8" id="topXbox8">
+                        <input type="submit" value="8" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/digit9" id="topXbox9">
+                        <input type="submit" value="9" class="xboxButton">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/top/digit0" id="topXbox0">
+                        <input type="submit" value="0" class="xboxButton">
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+        </table>
 
         <h4>Bottom</h4>
         <table>
@@ -135,6 +196,66 @@
                         <input type="submit" value="Exit" class="xboxButton">
                     </form>
                 </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/bottom/digit1" id="bottomXbox1">
+                        <input type="submit" value="1" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/bottom/digit2" id="bottomXbox2">
+                        <input type="submit" value="2" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/bottom/digit3" id="bottomXbox3">
+                        <input type="submit" value="3" class="xboxButton">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/bottom/digit4" id="bottomXbox4">
+                        <input type="submit" value="4" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/bottom/digit5" id="bottomXbox5">
+                        <input type="submit" value="5" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/bottom/digit6" id="bottomXbox6">
+                        <input type="submit" value="6" class="xboxButton">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/bottom/digit7" id="bottomXbox7">
+                        <input type="submit" value="7" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/bottom/digit8" id="bottomXbox8">
+                        <input type="submit" value="8" class="xboxButton">
+                    </form>
+                </td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/bottom/digit9" id="bottomXbox9">
+                        <input type="submit" value="9" class="xboxButton">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <form action="http://${NGINX_HOST}/api/xboxone/bottom/digit0" id="bottomXbox0">
+                        <input type="submit" value="0" class="xboxButton">
+                    </form>
+                </td>
+                <td></td>
             </tr>
         </table>
     </body>
