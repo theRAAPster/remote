@@ -94,10 +94,10 @@ router.route('/element/:id/:command')
     .post(function(req, res) {
       switch(req.params.id) {
         case 'bottom':
-          var connectorAddress = '4:2';
+          var connectorAddress = '5:2';
           break;
         case 'top':
-          var connectorAddress = '4:1';
+          var connectorAddress = '5:1';
           break;
       }
 
