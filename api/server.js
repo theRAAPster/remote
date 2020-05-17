@@ -14,8 +14,8 @@ var net        = require('net');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var GC_SERVER_HOST = '192.168.1.50';
-var GC_SERVER_PORT = 4998;
+var GC_SERVER_HOST = process.env.GLOBAL_CACHE_IP || '192.168.30.11';
+var GC_SERVER_PORT = process.env.GLOBAL_CACHE_PORT || 4998;
 
 // Element TV IR codes
 var elementMute = '1,38000,1,69,342,171,21,21,21,21,21,64,21,21,21,21,21,21,21,21,21,21,21,64,21,64,21,21,21,64,21,64,21,64,21,64,21,64,21,64,21,21,21,21,21,64,21,21,21,21,21,21,21,21,21,21,21,64,21,64,21,21,21,64,21,64,21,64,21,64,21,1517,342,86,21,3654';

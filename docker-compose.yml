@@ -24,6 +24,9 @@ services:
     networks:
     - remote_nw
     restart: always
+    environment:
+      - GLOBAL_CACHE_IP=192.168.30.11
+      - GLOBAL_CACHE_PORT=4998
 networks:
   remote_nw:
     driver: bridge
