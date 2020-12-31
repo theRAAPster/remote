@@ -130,6 +130,9 @@ router.route('/element/:id/:command')
             case 'top':
               var connectorAddress = '4:1';
               break;
+            case 'righttop':
+              var connectorAddress = '4:3';
+              break;
           }
 
           switch (req.params.command) {
