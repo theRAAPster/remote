@@ -14,7 +14,7 @@
     },
     "dependencies": {
         "express": "~5.1.0",
-        "mongoose": "~8.13.1",
+        "mongoose": "~8.14.0",
         "body-parser": "~2.2.0"
     }
 }
